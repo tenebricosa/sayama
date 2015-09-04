@@ -25,7 +25,7 @@ module.exports = function(grunt) {
       cssmin: {
           target: {
               files: {
-                  'sayama.css': ['crossbrowser.css']
+                  'sayama.css': ['crossbrowser.css', 'node_modules/normalize.css/normalize.css']
               }
           }
       },

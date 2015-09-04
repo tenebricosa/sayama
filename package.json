@@ -4,6 +4,7 @@
   "description": "china things",
   "main": "index.js",
   "dependencies": {
+    "normalize.css": "^3.0.3",
     "stylus": "^0.52.4"
   },
   "devDependencies": {
