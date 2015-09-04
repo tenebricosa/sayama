@@ -1,0 +1,17 @@
+# OS X system files
+.DS_Store
+*.class
+
+# IntelliJ IDEA
+*.ant
+*.project
+*.idea
+*.iml
+
+# Eclipse
+.settings
+.classpath
+
+# Own files
+node_modules/*
+bower_components/*
