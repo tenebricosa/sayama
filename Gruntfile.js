@@ -31,11 +31,8 @@ module.exports = function(grunt) {
       },
 
       watch: {
-          options: {
-              reload: true
-          },
           src: {
-              files: ["static/images/*", "static/styles/*.styl", "templates/*"],
+              files: ["static/styles/*.styl", "templates/*.html"],
               tasks: ["default"],
           }
       },

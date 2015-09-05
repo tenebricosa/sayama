@@ -1,12 +1,11 @@
-.wrapper
-	background-image: url('static/images/index-wrapper.png')
-	height: 793px
-	width: 1122px
-	background-size: cover
-	color: #fff
-	
-
 .index
+
+	&__wrapper
+		background-image: url('static/images/index-wrapper.png')
+		height: $page-height
+		width: $page-width
+		background-size: contain
+		color: #fff
 
 	&__container
 		position: relativa
@@ -20,9 +19,13 @@
 		text-transform: uppercase
 
 	&__list	
-		margin: 0
+		margin: 52px 0 0 0
+		padding: 0
 		position: absolute
 		list-style-type: none
+
+	&__list-item
+		margin-bottom: 18px
 
 	&__list-marker
 		width: 24px
@@ -30,13 +33,21 @@
 		background-color: #fdecdf
 		border-radius: 5px
 		position: relative
+		box-shadow: 1px 1px 1px 0 #db531f
+		display: inline-block
+		vertical-align: bottom
 
 	&__list-num
 		color: #f26621
 		font-size: 15px
 		position: absolute
-		margin: auto
-		top: 0
-		bottom: 0
-		left: 0
-		right: 0
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+
+	&__list-title
+		text-transform: uppercase
+		display: inline-block
+		margin: 0
+		vertical-align: bottom
+		font-size: 16px

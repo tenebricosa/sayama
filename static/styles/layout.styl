@@ -1,4 +1,41 @@
-html,
 body
-	height: 100%
 	font-family: Arial
+
+.layout
+
+	&__wrapper
+		height: $page-height
+		position: relative
+		background-color: #fce4d1
+		width: $page-width
+
+	&__content
+		margin-left: 44px
+		position: relative
+		height: $page-height - $layout-header-height - $layout-footer-height
+		top: $layout-header-height - 1
+		line-height: 18px
+
+	&__header
+		background-image: url('static/images/layout-header.png')
+		height: $layout-header-height
+		width: 100%
+		background-size: contain
+		background-repeat: no-repeat
+		position: absolute
+		top: 0
+
+	&__footer--empty
+		height: 22px
+		width: 100%
+		position: absolute
+		bottom: 0
+		background-color: $orange-color
+
+	&__title
+		margin: 0
+		font-size: 15px
+		text-transform: uppercase
+		color: $orange-color
+		position: absolute
+		top: 13px
