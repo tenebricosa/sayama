@@ -6,7 +6,7 @@ module.exports = function(grunt) {
       stylus: {
           compile: {
               files: {
-                  "compile.css": ["static/styles/*.styl"]
+                  "compile.css": ["static/styles/require.styl"]
               }
           }
       },
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
               reload: true
           },
           src: {
-              files: ["static/**/*", "templates/*"],
+              files: ["static/images/*", "static/styles/*.styl", "templates/*"],
               tasks: ["default"],
           }
       },
