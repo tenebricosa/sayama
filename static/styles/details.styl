@@ -1,0 +1,36 @@
+.details
+
+	&__table
+		font-weight: bold
+		top: 32px
+
+		& .table__row:first-child,
+		& .table__row:last-child
+			background-color: #f8cdab
+
+		&--second
+			top: 220px
+
+		&--third
+			top: 320px
+			height: 320px
+
+			& .table__row
+				vertical-align: top
+
+		&--second .table__row:first-child,
+		&--second .table__row:last-child
+		&--third .table__row:first-child,
+		&--third .table__row:last-child
+			background-color: rgba(0,0,0,0)
+
+	&__no-col
+		margin: 0
+
+	&__title
+
+		&--second
+			top: 200px
+
+		&--third
+			top: 300px
