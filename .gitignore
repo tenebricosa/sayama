@@ -15,4 +15,5 @@
 # Own files
 node_modules/*
 bower_components/*
-sayama.css
+output.css
+output.css.map
