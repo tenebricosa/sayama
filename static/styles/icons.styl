@@ -7,17 +7,31 @@
 			left: 8px
 			bottom: 12px
 
+		&--right
+			top: 60px
+			left: 0
+			width: 100%
+
 	&__item
 		width: 42px
 		height: 42px
 		background-position-x: 0
-		display: inline-block
 		border: 1px solid rgba(255,255,255,0.8)
 		border-radius: 6px
 		background-image: url('static/images/icons.png')
+		display: inline-block
 
 		$icons = money suit notebook building hat swimsuit x2 cream photo sport boots
 
 		for icon, i in $icons
 			&--{icon}
 				background-position-y: - i * 42px
+
+		&--right
+			margin: 7px 0
+			vertical-align: middle
+
+	&__text
+		font-size: 12px
+		vertical-align: middle
+		margin-left: 10px

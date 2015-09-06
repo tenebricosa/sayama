@@ -4,6 +4,9 @@
 	position: absolute
 	top: 61px
 
+	&__head
+		font-weight: bold
+
 	&__head,
 	&__col
 		border: 1px solid #fff
@@ -12,8 +15,14 @@
 	&__col:first-child
 		width: 96px
 
-	&__col
+	&__col,
+	&__head
 		padding: 3px
 
 		&--center
 			text-align: center
+
+	&__row
+
+		&--dark
+			background-color: #f8cdab
