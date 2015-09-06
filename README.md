@@ -6,7 +6,11 @@ This website requires [Grunt](http://gruntjs.com/) ```>=0.4.0```
 ```
 npm install
 ```
-Run the default Grunt task to prepare required files
+Run the default Grunt task to prepare required files to development
 ```
 grunt
+```
+Run the build Grunt task to prepare required files to production
+```
+grunt build
 ```
