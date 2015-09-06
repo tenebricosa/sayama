@@ -1,0 +1,23 @@
+.icons
+
+	&__container
+		position: absolute
+
+		&--footer
+			left: 8px
+			bottom: 12px
+
+	&__item
+		width: 42px
+		height: 42px
+		background-position-x: 0
+		display: inline-block
+		border: 1px solid rgba(255,255,255,0.8)
+		border-radius: 6px
+		background-image: url('static/images/icons.png')
+
+		$icons = money suit notebook building hat swimsuit x2 cream photo sport boots
+
+		for icon, i in $icons
+			&--{icon}
+				background-position-y: - i * 42px

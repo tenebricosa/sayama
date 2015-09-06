@@ -48,7 +48,7 @@ body {
   text-decoration: none;
   border-radius: 4px;
   padding: 3px 3px 0;
-  font-size: 13px;
+  font-size: 10px;
   box-shadow: 1px 1px 1px 0 #e5a386;
   cursor: pointer;
   position: absolute;
@@ -65,7 +65,12 @@ body {
   color: #ea660b;
   position: absolute;
   bottom: 6px;
+}
+.layout__page-num--left {
   left: 22px;
+}
+.layout__page-num--center {
+  left: 520px;
 }
 .frame__border,
 .frame__container {
@@ -94,6 +99,75 @@ body {
 }
 .frame__shot:nth-of-type(3) {
   top: 470px;
+}
+.table {
+  width: 100%;
+  font-size: 12px;
+  position: absolute;
+  top: 61px;
+}
+.table__head,
+.table__col {
+  border: 1px solid #fff;
+}
+.table__head:first-child,
+.table__col:first-child {
+  width: 96px;
+}
+.table__col {
+  padding: 3px;
+}
+.table__col--center {
+  text-align: center;
+}
+.icons__container {
+  position: absolute;
+}
+.icons__container--footer {
+  left: 8px;
+  bottom: 12px;
+}
+.icons__item {
+  width: 42px;
+  height: 42px;
+  background-position-x: 0;
+  display: inline-block;
+  border: 1px solid rgba(255,255,255,0.8);
+  border-radius: 6px;
+  background-image: url("static/images/icons.png");
+}
+.icons__item--money {
+  background-position-y: 0px;
+}
+.icons__item--suit {
+  background-position-y: -42px;
+}
+.icons__item--notebook {
+  background-position-y: -84px;
+}
+.icons__item--building {
+  background-position-y: -126px;
+}
+.icons__item--hat {
+  background-position-y: -168px;
+}
+.icons__item--swimsuit {
+  background-position-y: -210px;
+}
+.icons__item--x2 {
+  background-position-y: -252px;
+}
+.icons__item--cream {
+  background-position-y: -294px;
+}
+.icons__item--photo {
+  background-position-y: -336px;
+}
+.icons__item--sport {
+  background-position-y: -378px;
+}
+.icons__item--boots {
+  background-position-y: -420px;
 }
 .index__wrapper {
   background-image: url("static/images/index-wrapper.png");
@@ -183,6 +257,15 @@ body {
   font-size: 12px;
   margin: 0;
   text-align: justify;
+}
+.schedule__content {
+  width: 719px;
+}
+.schedule__subtitle {
+  font-size: 12px;
+  font-weight: normal;
+  position: absolute;
+  top: 11px;
 }
 /* */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
