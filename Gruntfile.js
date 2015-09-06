@@ -23,14 +23,24 @@ module.exports = function(grunt) {
               },
 
               src: "compile.css",
-              dest: "crossbrowser.css"
+              dest: "output.css"
           }
+      },
+
+      concat: {
+        options: {
+          sourceMap: true
+        },
+        dist: {
+          src: ['output.css', 'node_modules/normalize.css/normalize.css'],
+          dest: 'output.css',
+        },
       },
 
       cssmin: {
           target: {
               files: {
-                  'sayama.css': ['crossbrowser.css', 'node_modules/normalize.css/normalize.css']
+                  'output.css': ['output.css']
               }
           }
       },
@@ -42,10 +52,11 @@ module.exports = function(grunt) {
           }
       },
 
-      clean: ["compile.css", "crossbrowser.css"],
+      clean: ["compile.css"],
 
   });
 
-  grunt.registerTask('default', ['stylus', 'autoprefixer', 'cssmin', 'clean', 'watch']);
+  grunt.registerTask('default', ['stylus', 'autoprefixer', 'concat', 'clean', 'watch']);
+  grunt.registerTask('build', ['stylus', 'autoprefixer', 'concat', 'cssmin', 'clean']);
 
 };
