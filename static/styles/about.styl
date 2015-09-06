@@ -13,8 +13,11 @@
 		width: 310px
 		margin: 48px 0 0 17px
 
-	&__col:first-of-type
-		margin-left: 0
+		&:first-of-type
+			margin-left: 0
+
+		& .about__title:first-child
+			margin: 0 
 
 	&__title
 		font-size: 13px
@@ -22,11 +25,9 @@
 		text-transform: uppercase
 		margin: 18px 0 0 0
 
-	&__col 	&__title:first-child
-		margin: 0 
-
 	&__text
 		font-size: 12px
 		margin: 0
+		text-align: justify
 
 
