@@ -47,7 +47,7 @@ module.exports = function(grunt) {
 
       watch: {
           src: {
-              files: ["static/styles/*.styl", "templates/*.html"],
+              files: ["static/styles/*.styl", "static/images/*", "templates/*.html"],
               tasks: ["default"],
           }
       },
