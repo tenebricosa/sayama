@@ -8,13 +8,18 @@ module.exports = function(grunt) {
               files: {
                   "compile.css": ["static/styles/require.styl"]
               }
+          },
+          options: {
+              compress: false,
+              sourcemap: { inline: true }
           }
       },
 
       autoprefixer: {
           single_file: {
               options: {
-                  browsers: ["> 1%", "last 2 versions", "Firefox ESR", "Opera 12.1", "ie 8", "ie 9"]
+                  browsers: ["> 1%", "last 2 versions", "Firefox ESR", "Opera 12.1", "ie 8", "ie 9"],
+                  map: { inline: true, sourcesContent: true }
               },
 
               src: "compile.css",
